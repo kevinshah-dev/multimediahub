@@ -23,7 +23,7 @@ const Genres = ({
     setGenres([...genres, genre]);
     setPage(1);
   };
-
+//I use axios to fetch data from the TMDB API. It is easier and faster than using the fetch function in standard React
   const fetchGenres = async () => {
     const { data } = await axios.get(
       `https://api.themoviedb.org/3/genre/${type}/list?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`
@@ -40,6 +40,7 @@ const Genres = ({
     // eslint-disable-next-line
   }, []);
 
+//Creates the small genre "chips" that are viewable on the movies and series pages
   return (
     <div style={{ padding: "6px 0" }}>
       {selectedGenres.map((genre) => (

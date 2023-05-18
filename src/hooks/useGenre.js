@@ -1,3 +1,5 @@
+//Custom hook for Genre selection
+
 const useGenre = (selectedGenres) => {
   if (selectedGenres.length < 1) return "";
 

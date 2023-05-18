@@ -59,7 +59,7 @@ const Search = () => {
             className="searchBox"
             label="Search"
             variant="filled"
-            onChange={(e) => setSearchText(e.target.value)}
+            onChange={(e) => setSearchText(e.target.value)} //Sets the search text for the user input
           />
           <Button
             onClick={fetchSearch}

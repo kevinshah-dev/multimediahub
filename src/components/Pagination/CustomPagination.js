@@ -8,6 +8,7 @@ const darkTheme = createMuiTheme({
   },
 });
 
+//Uses the Pagination component from MaterialUI to create a custom pagination solution for each of the main pages (Movies, TV Shows, and Search)
 export default function CustomPagination({ setPage, numOfPages = 10 }) {
   // Scroll to top when page changes
   const handlePageChange = (page) => {

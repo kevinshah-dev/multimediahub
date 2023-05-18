@@ -3,6 +3,10 @@ import { img_300, unavailable } from "../../config/config";
 import "./SingleContent.css";
 import ContentModal from "../ContentModal/ContentModal";
 
+
+//This component is used for the modal popup that is shown when clicking on a movie/tv show
+
+
 const SingleContent = ({
   id,
   poster,

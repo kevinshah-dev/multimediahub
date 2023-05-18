@@ -18,6 +18,8 @@ const useStyles = makeStyles({
   },
 });
 
+//This component creates the main navigation bar seen at the bottom of the page
+
 export default function SimpleBottomNavigation() {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
